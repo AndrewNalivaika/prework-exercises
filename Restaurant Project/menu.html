@@ -4,6 +4,50 @@
 	<div>
 	<title>Menu</title>
 	</div>
+	<link href="restaurantStyles.css" rel="stylesheet" type"text/css"/>
+	<style>
+		div.menu {
+		column-count: 3;
+		text-align: center;
+		background-image: url(images/menu.jpg);
+		background-size: 100% 100%;
+		
+		}
+		
+		h4{
+		font-size: 20px;
+		}
+		
+		p {
+		font-weight: bolder;
+		font-size: 18px;
+		}
+		table th, td{
+			border: 1px solid #292533;
+			padding: 5px 10px 5px 10px;
+			border-spacing: 2px 5px
+			}
+			table{
+			width: 100%;
+			}
+			td, th{
+			height: 30px;
+			}
+			
+			th{
+			background-color: #5b7d87;
+			color: white;
+			}
+			
+			tr:nth-child(odd) {
+			background-color:Red;
+			}
+			caption {
+			text-decoration: underline;
+			text-align: left;
+			}
+	
+	</style>
 </head>
 <body>
 	<div id="Title">
@@ -16,22 +60,27 @@
 			<a href ="contact.html" target="_blank">Contact Us</a>
 		<hr/>
 	</div>
-	<div id="menu">
+	<div class="menu">
+	<div class="left">
+	<br />
 	<h4>Burger and Fries</h4>
-	<p>An American Classic! <br />
-	Your choice- with or without cheese <br />
-	Pickle, onion, tomato and lettuce <br />
+	<p>An American Classic!<br />
+	Your choice- with or without cheese<br />
+	Pickle, onion, tomato and lettuce<br />
 	Served with our famous thick cut french fries<br />
 	$7.95</p>
 	<h4>Tenderloin Sandwich and Chips</h4>
-	<p>Really Hits the Spot! <br />
+	<p>Really Hits the Spot!<br />
 	Plain or sesame seed bun <br />
 	Pickle, onion, tomato and lettuce <br />
 	Served with our house made chips <br />
 	$8.95</p>
+	</div>
+	<div class="center">
+	<br />
 	<h4>Hot Dog and Chips</h4>
-	<p>A Summer Classic! <br />
-	Your choice- white or wheat bun <br />
+	<p>A Summer Classic!<br />
+	Your choice- white or wheat bun<br />
 	Relish, mustard and ketchup<br />
 	Served with our house made chips<br />
 	$7.95</p>
@@ -42,13 +91,16 @@
 	Thousand Island or Ranch Dressing <br />
 	Served with a dinner roll<br />
 	$6.95</p>
+	</div>
+	<div class="right">
+	<br />
 	<h4>Italian Sausage and Peppers</h4>
 	<p>An All Time Favorite!<br />
 	Your choice- mild or spicy <br />
 	Cole Slaw <br />
 	Served with garlic mashers <br />
 	$10.95</p>
-	<h4>Tenderloin Sandwich and Chips</h4>
+	<h4>Brisket Sandwich and Fries</h4>
 	<p>A Taste of Texas!<br />
 	Smoked Brisket on thick-cut Texas <br />
 	Toast <br />
@@ -57,12 +109,29 @@
 	french fries<br />
 	$7.95</p>
 	</div>
+	</div>
+			<table><caption>Beverages</caption>
+					<tr>
+						<td>Root Beer</td>
+						<td>$3.00</td>
+					</tr>
+					<tr>
+						<td>Bottled Water</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td>Lemonade</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Iced Tea</td>
+						<td>$1.25</td>
+					</tr>
+					
+					</table>	
 </body>
 <hr />
 <footer>
 <center><b>1150 Winthrop Pike, Smithfield, VT, 02445</b></center><br />
 <center><b>867-5309</b></center>
-
-
-
 </html>

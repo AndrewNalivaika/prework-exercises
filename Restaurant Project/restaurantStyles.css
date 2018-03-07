@@ -1,0 +1,37 @@
+@font-face{
+font-family: hotPizza;
+src: url(hotpizza.ttf);
+}
+
+h1{
+background-color:green;
+line-height: 70px;
+font-family: "hotPizza";
+font-size: 50px;
+padding: 10px;
+border: 10px;
+margin: 10px;
+}
+
+footer{
+font-family: "Lobster", Georgia, Times, serif;
+font-size: 20px;
+line-height: 31px;
+background-color: red;
+}
+
+a:link {
+  font-color: green;
+}
+
+a:visited {
+  color: Red;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:active {
+  font-decoration: none;
+}

@@ -4,6 +4,12 @@
 	<div>
 	<title>Contact Us</title>
 	</div>
+	<link href="restaurantStyles.css" rel="stylesheet" type"text/css"/>
+	<style>
+	div.required {
+		font-weight: bold;
+		}
+	</style>
 </head>
 <body>
 	<div id="Title">
@@ -18,31 +24,34 @@
 	</div>
 	<div id="Form">
 	<form action="submit.html" method="POST">
-	<label for="name"><b>First Name:</b></label><br />
-	<input type="text" name="name"><br />
-	<label for="phone"><b>Phone Number:</b></label><br />
-	<input type="text" name="phone"><br />
-	<label for="email"><b>Email:</b></label><br />
-	<input type="text" name="email"><br />
-	<label for="inquiry"><b>Reason for Inquiry:</b></label><br />
-	<select name="inquiry">
+	<div class="required">
+	<label for="name">First Name:</label><br />
+	<input type="text" name="name" required><br />
+	<label for="phone">Phone Number:</label><br />
+	<input type="text" name="phone" required><br />
+	<label for="email">Email:</label><br />
+	<input type="text" name="email" required><br />
+	<label for="inquiry">Reason for Inquiry:</label><br />
+	<select name="inquiry" required>
 	<option value="catering">Catering</option>
 	<option value="private_party">Private Party</option>
 	<option value="feedback">Feedback</option>
 	<option value="other">Other</option>
 	</select><br />
-	<label for="additional_info"><b>Additional Information:</b></label><br />
+	</div>
+	<label for="additional_info">Additional Information:</label><br />
 	<textarea name="additional_info"></textarea><br />
-	<label for="prior_cust"><b>Have you been to the restaurant?:</b></label><br />
+	<label for="prior_cust">Have you been to the restaurant?:</label><br />
 	<input type="radio" name="prior_cust" value="no" checked/>No
 	<input type="radio" name="prior_cust" value="yes"/>Yes <br />
-	<label for="contact_c"><b>Best Days to Contact You:</b></label><br />
+	<label for="contact_c">Best Days to Contact You:</label><br />
 	<input type="checkbox" name="contact_c" value="M"/>M
 	<input type="checkbox" name="contact_c" value="T"/>T
 	<input type="checkbox" name="contact_c" value="W"/>W
 	<input type="checkbox" name="contact_c" value="Th"/>Th
 	<input type="checkbox" name="contact_c" value="F"/>F <br />
 	<center><input type="submit" name="Submit" value="Submit"></center>
+	</div>
 	</form>
 </body>
 <hr />
