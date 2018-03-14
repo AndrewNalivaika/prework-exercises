@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<div>
-	<title>Home Page</title>
-	</div>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<link href="restaurantStyles.css" rel="stylesheet" type"text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<noscript>Please view our site with JavaScript enabled.</noscript>
+	<title>Home Page</title>
 	<style>
-	div.content {
+	div.content{
 	background-image: url(images/menu.jpg);
 	background-size: 100% 100%;
 	font-weight: bold;
 	}
-	
+	.jumbotron {
+	background-image: url(images/menu.jpg);
+	background-size: 100% 100%;
+	font-weight: bold;
+	}	
+	.carousel-control.left, .carousel-control.right{
+	background-image: none;
+	}
 	</style>
 </head>
+
 <body>
 	<div id="Title">
 		<h1><center>Boom Pizza</center></h1>
 	</div>
 	<div id="Navigation">
-		<hr />
-			<a href ="index.html" target="_blank">Home</a>
-			<a href ="menu.html" target="_blank">Menu</a>
-			<a href ="contact.html" target="_blank">Contact Us</a>
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" href ="index.html" target="_blank"><span class= "glyphicon glyphicon-home"></span></a></li>
+			<li class="nav-item">
+				<a class="nav-link" href ="menu.html" target="_blank">Menu</a></li>
+			<li class="nav-item">
+				<a class="nav-link" href ="contact.html" target="_blank">Contact Us</a></li>
+		</ul>
 		<hr/>
+	</div>
+	<div class="container">
+	<div class="jumbotron">
+		<h2>Exciting News!</h2> 
+			<p>Boom Pizza is opening new locations countrywide!</p> 
+	</div>
 	</div>
 	<div class="content">
 	<div id="Image">
 		<img style= "border-radius:50%; display: block; margin-left: auto; margin-right: auto; width:400px; height:150px;" src="images/pizza.jpg" alt="Our delicious pizza."/>
-		
-		
 	</div>
 	<div id="Description">
-		<center><p>Our Story</p></center>
+		<center><p><h2>Our Story</h2></p></center>
 		<p>We opened our first store in 1994, and we have been making our thin crust pizza from scratch when you order it ever since.
 		And we still use stone ovens with an open flame, only one of the reasons our unique pizzas are worth the wait! We pride ourselves in offering you the very best pizza, and we value your patronage.</p>
-	</div>
-	</div>
+	</div> <br />
+ </div>
+ 
+ <div class="container">
+  <h2>Boom Pizza News</h2>
+  <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <center><img src="images/beer.jpg" alt="Brew of the month"/></center>
+		<div class="carousel-caption">
+			<h3>Drink of the Month: SG Special Brew</h3>
+		</div>
+      </div>
+      <div class="item">
+        <center><img style= "width: 640px; height:480px" src="images/pizza_ii.jpg" alt="Seasonal Menu"/></center>
+		<div class="carousel-caption">
+			<h3>Spring Seasonal Menu starting March 19th!</h3>
+		</div>
+      </div>
+      <div class="item">
+        <center><img style="width 640px; height:480px" src="images/usmap.jpg" alt="Boom Pizza Countrywide coming soon!"/></center>
+		<div class="carousel-caption">
+			<h3>Boom Pizza: Coming Soon Countrywide</h3>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+ 
 </body>
 <hr />
 <footer>
